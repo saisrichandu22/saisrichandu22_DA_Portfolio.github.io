@@ -408,3 +408,62 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+/* POWER BI DASHBOARD GALLERY */
+
+.dashboard-gallery {
+  margin: 65px auto 0;
+  max-width: 1200px;
+}
+
+.gallery-title {
+  text-align: center;
+  font-size: 30px;
+  color: #64ffda;
+  margin-bottom: 35px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.gallery-card {
+  min-width: 0;
+  padding: 18px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 18px;
+}
+
+.gallery-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 10;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.gallery-card h4 {
+  color: #64ffda;
+  font-size: 19px;
+  margin: 18px 0 8px;
+}
+
+.gallery-card p {
+  color: #cbd5e1;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+@media screen and (max-width: 900px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-gallery {
+    margin-top: 40px;
+  }
+}
