@@ -355,16 +355,13 @@ textarea:focus-visible {
   margin-bottom: 60px;
 }
 
+
 .project-showcase {
-  display: grid;
-
-  grid-template-columns:
-    minmax(0, 1.1fr)
-    minmax(0, 1fr);
-
-  gap: 40px;
-  align-items: center;
+  display: block;
+  max-width: 950px;
+  margin: 0 auto;
 }
+
 
 .project-image-card {
   padding: 18px;
